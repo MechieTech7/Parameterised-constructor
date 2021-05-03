@@ -29,15 +29,16 @@ public class StudentPc {
 	        
 	    }
 	    public void  displayProfileOf(String studentName) {
-	       if    (studentname == this.name) 
+	       if    (studentName == this.name) 
 	       {	
 	    	    
-		        System.out.println("Required Roll no = "+ rollNo);
-		        System.out.println("Required Class Name = "+ className);
-		        System.out.println(" Current section= " + section);
-		        System.out.println(" Studying School = " + school+"\n");
+		        System.out.println("Required Roll no = "+  this.rollNo);
+		        System.out.println("Required Class Name = "+ this.className);
+		        System.out.println(" Current section= " + this.section);
+		        System.out.println(" Studying School = " + this.school+"\n");
 		        
-	       }else ( System.out.println("Specified User Not Found"))
+	       }else 
+	    	   System.out.println("Specified User Not Found");
 	    }
 	    public boolean isPass()
 	    {
