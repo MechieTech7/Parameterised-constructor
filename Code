@@ -1,0 +1,42 @@
+public class StudentPc {
+	
+	    String name;
+	    int rollNo;
+	    String className;
+	    String section;
+	    String school;
+	    boolean isTheResult;   
+	    
+	    StudentPc(String name, int rollNo, String className,String section,String school, boolean isTheResult)
+	    {
+	        this.name = name;
+	        this. rollNo = rollNo;
+	        this.className = className;
+	        this.section = section;
+	        this.school = school;
+	        this.isTheResult = isTheResult;        
+	    }
+	    
+	    public void studentData()
+	    {
+	        System.out.println("Name of Student = " + name);
+	        System.out.println("Roll no = "+ rollNo);
+	        System.out.println("Class Name = "+ className);
+	        System.out.println("section= " + section);
+	        System.out.println("School = " + school);
+	        System.out.println("Is student pass = "+ isTheResult);
+	    }
+	    
+	    public static void main (String args[])
+	    {
+	             
+	        
+	        StudentPc student1 = new StudentPc("Ravi", 1, "08","B","SBOA", false );
+	        student1.studentData();
+	        
+	        StudentPc student2 = new StudentPc("Ram", 2, "10","A","SB", true);
+	        student2.studentData();
+	        
+	    }
+	    
+	}
