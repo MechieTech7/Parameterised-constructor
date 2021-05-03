@@ -1,3 +1,5 @@
+package firstProject;
+
 public class StudentPc {
 	
 	    String name;
@@ -26,7 +28,17 @@ public class StudentPc {
 	        System.out.println("School = " + school+"\n");
 	        
 	    }
-	    
+	    public void  displayProfileOf(String studentName) {
+	       if    (studentname == this.name) 
+	       {	
+	    	    
+		        System.out.println("Required Roll no = "+ rollNo);
+		        System.out.println("Required Class Name = "+ className);
+		        System.out.println(" Current section= " + section);
+		        System.out.println(" Studying School = " + school+"\n");
+		        
+	       }else ( System.out.println("Specified User Not Found"))
+	    }
 	    public boolean isPass()
 	    {
 	    	if (this.isTheResult)
@@ -41,9 +53,12 @@ public class StudentPc {
 	        
 	        StudentPc student1 = new StudentPc("Ravi", 1, "08","B","SBOA", false );
 	        student1.studentData();
+	        student1.displayProfileOf("Ravi");
+	        
 	        
 	        StudentPc student2 = new StudentPc("Ram", 2, "10","A","SB", true);
 	        student2.studentData();
+	        student2.displayProfileOf("Ravi");
 	        
             System.out.println("results:\n");
 	        System.out.println("Is student pass :"+ student1.isPass());
