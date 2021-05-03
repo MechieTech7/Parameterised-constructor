@@ -12,3 +12,8 @@ The isPass method will check the result and return true if the student is Pass, 
 Parameterised constructor is used to pass one or more parameters at the same time.
 In the above program i used to pass strings and integers as parameters.
 I use boolean values for the result output.
+
+In parameterised constructor, initially need to commit parameters .
+By creating parameters assign the parameterised constructor.
+Then initialise values for cretaed parameters.
+By paasing the values constructor will return to it.
