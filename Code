@@ -23,8 +23,16 @@ public class StudentPc {
 	        System.out.println("Roll no = "+ rollNo);
 	        System.out.println("Class Name = "+ className);
 	        System.out.println("section= " + section);
-	        System.out.println("School = " + school);
-	        System.out.println("Is student pass = "+ isTheResult);
+	        System.out.println("School = " + school+"\n");
+	        
+	    }
+	    
+	    public boolean isPass()
+	    {
+	    	if (this.isTheResult)
+	    		return true;
+	    	else
+	    		return false;
 	    }
 	    
 	    public static void main (String args[])
@@ -37,6 +45,9 @@ public class StudentPc {
 	        StudentPc student2 = new StudentPc("Ram", 2, "10","A","SB", true);
 	        student2.studentData();
 	        
+            System.out.println("results:\n");
+	        System.out.println("Is student pass :"+ student1.isPass());
+	        System.out.println("Is student pass :"+ student2.isPass());
 	    }
 	    
 	}
